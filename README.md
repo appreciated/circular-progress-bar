@@ -1,6 +1,6 @@
 # CircularProgressbar Add-on for Vaadin 8
 
-${ComponentClassName} is a UI component add-on for Vaadin 8.
+circular-progressbar is a UI component add-on for Vaadin 8.
 
 ## Online demo
 
@@ -87,23 +87,9 @@ CircularProgressbar is written by <...>
 
 Here is a simple example on how to try out the add-on component:
 
-<...>
-
 For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
 
 ## Features
-
-### Feature A
-
-<...>
-
-### Feature B
-
-<...>
-
-### Feature C
-
-<...>
 
 ## API
 
