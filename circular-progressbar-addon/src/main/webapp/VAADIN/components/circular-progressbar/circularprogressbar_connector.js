@@ -4,7 +4,7 @@ window.com_github_appreciated_circular_progressbar_CircularProgressBar = functio
         circularProgressbar.innerHTML = '<svg class=""id="animated" viewbox="0 0 100 100">' +
         '<circle cx="50" cy="50" r="45" fill="#044B94" fill-opacity="0.0"/>' +
         '<path id="progress-background" stroke-linecap="round" stroke-width="2" stroke="#aaa" fill="none" stroke-dasharray="251.2,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+
-        '<path id="progress" stroke-linecap="round" stroke-width="2" stroke="#f00" fill="none" stroke-dasharray="0,251.2"' +
+        '<path id="progress" stroke-linecap="round" stroke-width="2" stroke="#197de1" fill="none" stroke-dasharray="0,251.2"' +
         'd="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>' +
         '<text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="17">100%</text>' +
         '</svg>';

@@ -6,7 +6,7 @@
 	<artifactId>circular-progressbar-demo</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>CircularProgressbar Add-on Demo</name>
+	<name>circular-progressbar Add-on Demo</name>
 
 	<prerequisites>
 		<maven>3</maven>
