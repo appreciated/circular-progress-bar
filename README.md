@@ -1,10 +1,10 @@
-# CircularProgressbar Add-on for Vaadin 8
+# Circular Progressbar Add-on for Vaadin 8
 
-${ComponentClassName} is a UI component add-on for Vaadin 8.
+circular-progressbar is a UI component add-on for Vaadin 8.
 
-## Online demo
+## Demo
 
-Try the add-on demo at <url of the online demo>
+![Alt Text](https://github.com/appreciated/blob/blob/master/progress-bar-demo.gif)
 
 ## Download release
 
@@ -18,48 +18,6 @@ cd demo
 mvn jetty:run
 
 To see the demo, navigate to http://localhost:8080/
-
-## Development with Eclipse IDE
-
-For further development of this add-on, the following tool-chain is recommended:
-- Eclipse IDE
-- m2e wtp plug-in (install it from Eclipse Marketplace)
-- Vaadin Eclipse plug-in (install it from Eclipse Marketplace)
-- JRebel Eclipse plug-in (install it from Eclipse Marketplace)
-- Chrome browser
-
-### Importing project
-
-Choose File > Import... > Existing Maven Projects
-
-Note that Eclipse may give "Plugin execution not covered by lifecycle configuration" errors for pom.xml. Use "Permanently mark goal resources in pom.xml as ignored in Eclipse build" quick-fix to mark these errors as permanently ignored in your project. Do not worry, the project still works fine. 
-
-### Debugging server-side
-
-If you have not already compiled the widgetset, do it now by running vaadin:install Maven target for circular-progressbar-root project.
-
-If you have a JRebel license, it makes on the fly code changes faster. Just add JRebel nature to your circular-progressbar-demo project by clicking project with right mouse button and choosing JRebel > Add JRebel Nature
-
-To debug project and make code modifications on the fly in the server-side, right-click the circular-progressbar-demo project and choose Debug As > Debug on Server. Navigate to http://localhost:8080/circular-progressbar-demo/ to see the application.
-
-### Debugging client-side
-
-Debugging client side code in the circular-progressbar-demo project:
-  - run "mvn vaadin:run-codeserver" on a separate console while the application is running
-  - activate Super Dev Mode in the debug window of the application or by adding ?superdevmode to the URL
-  - You can access Java-sources and set breakpoints inside Chrome if you enable source maps from inspector settings.
- 
-## Release notes
-
-### Version 1.0-SNAPSHOT
-- ...
-- ...
-
-## Roadmap
-
-This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases. That said, the following features are planned for upcoming releases:
-- ...
-- ...
 
 ## Issue tracking
 
@@ -79,32 +37,12 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-CircularProgressbar is written by <...>
-
-# Developer Guide
-
-## Getting started
-
-Here is a simple example on how to try out the add-on component:
-
-<...>
-
-For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
+CircularProgressbar is written by Appreciated 
 
 ## Features
 
-### Feature A
-
-<...>
-
-### Feature B
-
-<...>
-
-### Feature C
-
-<...>
+A Circular Progressbar Component for Vaadin with animated Progress. Realized with SVG, and JavaScript.
 
 ## API
 
-CircularProgressbar JavaDoc is available online at <...>
+Only setProgress(0-100) and getProgress(0-100). 
