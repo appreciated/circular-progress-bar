@@ -2,13 +2,13 @@
 
 circular-progressbar is a UI component add-on for Vaadin 8.
 
-## Gif Demo
+## Demo
 
 ![Alt Text](https://github.com/appreciated/blob/blob/master/progress-bar-demo.gif)
 
 ## Online demo
 
-Try the add-on demo at <url of the online demo>
+Currently none provided
 
 ## Download release
 
