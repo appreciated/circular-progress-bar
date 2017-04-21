@@ -1,4 +1,4 @@
-# CircularProgressbar Add-on for Vaadin 8
+# Circular Progressbar Add-on for Vaadin 8
 
 circular-progressbar is a UI component add-on for Vaadin 8.
 
