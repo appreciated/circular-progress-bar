@@ -5,7 +5,7 @@
 	<groupId>com.github.appreciated</groupId>
 	<artifactId>circular-progressbar-root</artifactId>
 	<packaging>pom</packaging>
-	<version>0.5</version>
+	<version>0.5.1</version>
 	<name>circular-progressbar Add-on Root Project</name>
 
 	<prerequisites>

@@ -18,9 +18,7 @@ import javax.servlet.annotation.WebServlet;
 @SuppressWarnings("serial")
 public class DemoUI extends UI {
 
-
     private TestView component;
-
     @WebServlet(value = "/*", asyncSupported = true)
     @VaadinServletConfiguration(productionMode = false, ui = DemoUI.class)
     public static class Servlet extends VaadinServlet {
@@ -28,9 +26,7 @@ public class DemoUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-        // Initialize our new UI component
         component = new TestView();
-        // Show it in the middle of the screen
         final VerticalLayout layout = new VerticalLayout();
         layout.setStyleName("demoContentLayout");
         layout.setSizeFull();
@@ -46,7 +42,7 @@ public class DemoUI extends UI {
         super.attach();
         new Thread(() -> {
             for (int i = 0; i <= 10; i++) {
-                final int progress = i * 10;
+                final double progress = i * 10 + 0.3253452345234523452345;
                 component.getProgressBars().forEach(circularProgressBar -> {
                     try {
                         Thread.sleep(250);
@@ -54,10 +50,11 @@ public class DemoUI extends UI {
                         e.printStackTrace();
                     }
                     DemoUI.this.access(() -> circularProgressBar.setProgress(progress));
+                    System.out.println(progress);
                 });
             }
             for (int i = 10; i >= 0; i--) {
-                final int progress = i * 10;
+                final double progress = i * 10 + 0.3253452345234523452345;
                 component.getProgressBars().forEach(circularProgressBar -> {
                     try {
                         Thread.sleep(250);
@@ -65,10 +62,9 @@ public class DemoUI extends UI {
                         e.printStackTrace();
                     }
                     DemoUI.this.access(() -> circularProgressBar.setProgress(progress));
+                    System.out.println(progress);
                 });
             }
         }).start();
     }
-
-
 }
