@@ -5,8 +5,8 @@
 	<groupId>com.github.appreciated</groupId>
 	<artifactId>circular-progressbar-demo</artifactId>
 	<packaging>war</packaging>
-	<version>0.5.1</version>
-	<name>circular-progressbar Add-on Demo</name>
+	<version>0.5.2</version>
+	<name>Circular Progressbar Add-on Demo</name>
 
 	<prerequisites>
 		<maven>3</maven>

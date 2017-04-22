@@ -1,4 +1,4 @@
-package com.github.appreciated.circular_progressbar;
+package com.github.appreciated.circularprogressbar;
 
 /**
  * Created by Johannes on 11.01.2017.

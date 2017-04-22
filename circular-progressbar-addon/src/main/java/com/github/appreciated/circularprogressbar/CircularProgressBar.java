@@ -1,4 +1,4 @@
-package com.github.appreciated.circular_progressbar;
+package com.github.appreciated.circularprogressbar;
 
 import com.vaadin.annotations.JavaScript;
 import com.vaadin.ui.AbstractJavaScriptComponent;
