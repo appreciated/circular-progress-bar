@@ -1,7 +1,5 @@
 # Circular Progressbar Add-on for Vaadin 8
 
-circular-progressbar is a UI component add-on for Vaadin 8.
-
 ## Demo
 
 ![Alt Text](https://github.com/appreciated/blob/blob/master/progress-bar-demo.gif)
