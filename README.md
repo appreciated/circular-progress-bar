@@ -46,6 +46,7 @@ A Circular Progressbar Component for Vaadin with animated Progress. Realized wit
 ## API
 
 `
-CircularProgressBar::setProgress(double)
+// Provide a value between 0 and 100  
+CircularProgressBar::setProgress(double)  
 double CircularProgressBar::getProgress()
 `
