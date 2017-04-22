@@ -28,24 +28,18 @@
 		<Vaadin-Addon>${project.artifactId}-${project.version}.jar</Vaadin-Addon>
 	</properties>
 
-    <!--
-	<organization>
-		<name>My Name</name>
-		<url>https://github.com/mygithubaccount/CircularProgressbar/</url>
-	</organization>
-
 	<scm>
-		<url>git://github.com/mygithubaccount/CircularProgressbar.git</url>
-		<connection>scm:git:git://github.com/mygithubaccount/CircularProgressbar.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:/mygithubaccount/${componentClassName}.git</developerConnection>
-		<tag>CircularProgressbar add-on for Vaadin</tag>
+		<url>git://github.com/appreciated/circular-progressbar.git</url>
+		<connection>scm:git:git://github.com/appreciated/circular-progressbar</connection>
+		<developerConnection>scm:git:ssh://git@github.com:/appreciated/circular-progressbar.git</developerConnection>
+		<tag>circular-progressbar add-on for Vaadin</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/mygithubaccount/CircularProgressbar/issues</url>
+		<url>https://github.com/appreciated/circular-progressbar/issues</url>
 	</issueManagement>
-    -->
+
 
 	<licenses>
 		<license>
