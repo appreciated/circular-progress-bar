@@ -5,7 +5,7 @@
 	<groupId>com.github.appreciated</groupId>
 	<artifactId>circular-progressbar</artifactId>
 	<packaging>jar</packaging>
-	<version>0.6</version>
+	<version>0.6.1</version>
 	<name>Circular Progressbar Add-on</name>
 
 	<prerequisites>
@@ -32,7 +32,7 @@
 		<url>git://github.com/appreciated/circular-progressbar.git</url>
 		<connection>scm:git:git://github.com/appreciated/circular-progressbar</connection>
 		<developerConnection>scm:git:ssh://git@github.com:/appreciated/circular-progressbar.git</developerConnection>
-		<tag>circular-progressbar add-on for Vaadin</tag>
+		<tag>Circular Progressbar add-on for Vaadin</tag>
 	</scm>
 
 	<issueManagement>
@@ -92,9 +92,9 @@
 							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 						</manifest>
 						<manifestEntries>
-							<!-- Package format version - do not change -->
 							<Vaadin-Package-Version>1</Vaadin-Package-Version>
 							<Vaadin-License-Title>${Vaadin-License-Title}</Vaadin-License-Title>
+							<Vaadin-Stylesheets>VAADIN/addons/circular-progressbar/circular-progressbar.scss</Vaadin-Stylesheets>
 						</manifestEntries>
 					</archive>
 				</configuration>
@@ -166,6 +166,9 @@
 			</resource>
 			<resource>
 				<directory>src/main/webapp</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
 			</resource>
 		</resources>
 
