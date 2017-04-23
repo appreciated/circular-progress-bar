@@ -2,8 +2,8 @@ window.com_github_appreciated_circularprogressbar_CircularProgressBar = function
 
     var circularProgressbar = this.getElement();
     circularProgressbar.innerHTML = '<svg class="" id="animated" viewBox="0 0 100 100">'+
-    '<path id="progress-background" stroke-linecap="round" stroke-width="5" stroke="#d4d4d4" fill="none" stroke-dasharray="251.2,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Track
-    '<path id="progress-border" stroke-linecap="round" stroke-width="5" stroke="#1362b1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Border
+    '<path id="progress-background" stroke-linecap="round" stroke-width="6" stroke="#d4d4d4" fill="none" stroke-dasharray="251.2,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Track
+    '<path id="progress-border" stroke-linecap="round" stroke-width="6" stroke="#1362b1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Border
     '<path id="progress-inner" stroke-linecap="round" stroke-width="4" stroke="#197de1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Inner
     '<text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="17">0%</text>' + // Label
     '</svg>';
