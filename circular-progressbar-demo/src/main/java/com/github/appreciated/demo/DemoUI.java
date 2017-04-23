@@ -7,6 +7,7 @@ import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Alignment;
+import com.vaadin.ui.Component;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -18,7 +19,8 @@ import javax.servlet.annotation.WebServlet;
 @SuppressWarnings("serial")
 public class DemoUI extends UI {
 
-    private TestView component;
+    private Component component;
+
     @WebServlet(value = "/*", asyncSupported = true)
     @VaadinServletConfiguration(productionMode = false, ui = DemoUI.class)
     public static class Servlet extends VaadinServlet {
@@ -26,7 +28,7 @@ public class DemoUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-        component = new TestView();
+        component = new StylingView();
         final VerticalLayout layout = new VerticalLayout();
         layout.setStyleName("demoContentLayout");
         layout.setSizeFull();
@@ -36,35 +38,35 @@ public class DemoUI extends UI {
         layout.setComponentAlignment(component, Alignment.MIDDLE_CENTER);
         setContent(layout);
     }
-
+/*
     @Override
     public void attach() {
         super.attach();
         new Thread(() -> {
             for (int i = 0; i <= 10; i++) {
-                final double progress = i * 10 + 0.3253452345234523452345;
+                final double value = i * 10 + 0.3253452345234523452345;
                 component.getProgressBars().forEach(circularProgressBar -> {
                     try {
                         Thread.sleep(250);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    DemoUI.this.access(() -> circularProgressBar.setProgress(progress));
-                    System.out.println(progress);
+                    DemoUI.this.access(() -> circularProgressBar.setValue(value));
+                    System.out.println(value);
                 });
             }
             for (int i = 10; i >= 0; i--) {
-                final double progress = i * 10 + 0.3253452345234523452345;
+                final double value = i * 10 + 0.3253452345234523452345;
                 component.getProgressBars().forEach(circularProgressBar -> {
                     try {
                         Thread.sleep(250);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    DemoUI.this.access(() -> circularProgressBar.setProgress(progress));
-                    System.out.println(progress);
+                    DemoUI.this.access(() -> circularProgressBar.setValue(value));
+                    System.out.println(value);
                 });
             }
         }).start();
-    }
+    }*/
 }

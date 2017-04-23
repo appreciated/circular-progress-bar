@@ -7,5 +7,5 @@ package com.github.appreciated.circularprogressbar;
 import com.vaadin.shared.ui.JavaScriptComponentState;
 
 public class CircularProgressBarState extends JavaScriptComponentState {
-    public double progress;
+    public float value;
 }

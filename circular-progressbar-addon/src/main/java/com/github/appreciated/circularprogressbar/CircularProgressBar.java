@@ -15,12 +15,12 @@ public class CircularProgressBar extends AbstractJavaScriptComponent {
         }
     }
 
-    public void setProgress(double value) {
-        getState().progress = value;
+    public void setValue(float value) {
+        getState().value = value;
     }
 
-    public double getProgress() {
-        return getState().progress;
+    public float getProgress() {
+        return getState().value;
     }
 
     @Override
