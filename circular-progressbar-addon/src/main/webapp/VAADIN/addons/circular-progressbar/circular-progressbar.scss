@@ -3,7 +3,11 @@
         stroke: $v-background-color;
     }
     .circular-progressbar #progress-border {
-        stroke: $v-selection-color;
+       @if $border {
+            stroke: last(valo-border($v-border, $v-selection-color, $v-app-background-color));
+       } @else {
+          stroke: none;
+       }
     }
     .circular-progressbar #progress-inner {
         stroke: $v-selection-color;
