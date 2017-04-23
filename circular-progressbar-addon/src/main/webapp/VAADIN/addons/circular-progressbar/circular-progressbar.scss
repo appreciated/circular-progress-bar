@@ -1,11 +1,14 @@
 @mixin circular-progressbar {
-       .circular-progressbar-border {
-
-       }
-        .circular-progressbar-fill {
-
-          }
-          .circular-progressbar-track {
-
-         }
+    .circular-progressbar #progress-background {
+        stroke: $v-background-color;
+    }
+    .circular-progressbar #progress-border {
+        stroke: $v-selection-color;
+    }
+    .circular-progressbar #progress-inner {
+        stroke: $v-selection-color;
+    }
+    .circular-progressbar #count {
+        fill: $v-font-color;
+    }
 }

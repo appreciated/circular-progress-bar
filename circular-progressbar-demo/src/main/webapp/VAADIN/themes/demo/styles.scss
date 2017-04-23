@@ -1,14 +1,42 @@
+$v-app-loading-text: "Blueprint Valo";
+$v-background-color: #1a61b7;
+$v-focus-color: #fff;
+$v-panel-background-color: $v-background-color;
+$v-overlay-background-color: $v-background-color;
+$valo-menu-background-color: $v-background-color;
+$v-overlay-shadow: 0 0 0 1px rgba(#fff, .5);
+$v-window-shadow: $v-overlay-shadow;
+$v-window-modality-curtain-background-color: $v-background-color;
+$v-bevel: false;
+$v-gradient: false;
+$v-shadow: false;
+$v-textfield-bevel: false;
+$v-textfield-shadow: false;
+$v-border: 1px solid (v-tint 1.5);
+$v-textfield-background-color: $v-background-color;
+$v-font-family: sans-serif;
+$v-font-size: 18px;
+
 @import "../valo/valo.scss";
+@import "../../../VAADIN/addons/circular-progressbar/circular-progressbar.scss";
 
 $gray: #d1d1cf;
 $green: #40b527;
 $darkgreen: darken($green, 30%);
+
+
+/* Import and include this mixin into your project theme to include the addon themes */
+
+
+
+
 
 // Prefix all selectors in your theme with .demo
 .demo {
 
 	// Include valo theme styles in your theme
 	@include valo;
+    @include circular-progressbar;
 
 	// You can style your demo app right here
 	.demoContentLayout {
@@ -18,11 +46,7 @@ $darkgreen: darken($green, 30%);
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
-	
-	// You can also customize your component for the demo
-	// app, but remember that these styles are not part of
-	// the component. To include built-in CSS for your component,
-	// edit client/styles.css under java sources
+
 	div.circular-progressbar {
 		color: $green;
 		font-size: 50pt;

@@ -167,9 +167,6 @@
 			<resource>
 				<directory>src/main/webapp</directory>
 			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
 		</resources>
 
 	</build>
