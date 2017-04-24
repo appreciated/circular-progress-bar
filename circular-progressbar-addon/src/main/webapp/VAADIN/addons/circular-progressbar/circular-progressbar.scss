@@ -1,6 +1,8 @@
 @mixin circular-progressbar {
+
     .circular-progressbar #progress-background {
-        stroke: $v-background-color;
+        $bg-lightness: if(color-luminance($v-background-color) < 10, min($v-bevel-depth/2, 10%), min($v-bevel-depth/-2, -10%));
+        stroke: scale-color($v-background-color, $lightness: $bg-lightness, $saturation: $v-bevel-depth/-2);
     }
     .circular-progressbar #progress-border {
        @if $border {

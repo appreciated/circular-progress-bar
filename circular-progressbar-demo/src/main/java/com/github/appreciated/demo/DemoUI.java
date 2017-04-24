@@ -19,7 +19,7 @@ import javax.servlet.annotation.WebServlet;
 @SuppressWarnings("serial")
 public class DemoUI extends UI {
 
-    private Component component;
+    private VerticalLayout component;
 
     @WebServlet(value = "/*", asyncSupported = true)
     @VaadinServletConfiguration(productionMode = false, ui = DemoUI.class)
@@ -28,9 +28,15 @@ public class DemoUI extends UI {
 
     @Override
     protected void init(VaadinRequest request) {
-        component = new StylingView();
+        StylingView view = new StylingView();
+        component = new VerticalLayout();
+        component.addComponent(view);
+        component.setComponentAlignment(view, Alignment.MIDDLE_CENTER);
+        component.setWidth("300px");
+        component.setHeight("300px");
+        component.setMargin(false);
+        component.setStyleName("demoContentLayout");
         final VerticalLayout layout = new VerticalLayout();
-        layout.setStyleName("demoContentLayout");
         layout.setSizeFull();
         layout.setMargin(false);
         layout.setSpacing(false);
