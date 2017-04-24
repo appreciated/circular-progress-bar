@@ -33,8 +33,8 @@ public class DemoUI extends UI {
         component = new VerticalLayout();
         component.addComponent(view);
         component.setComponentAlignment(view, Alignment.MIDDLE_CENTER);
-        component.setWidth("300px");
-        component.setHeight("300px");
+        component.setWidth("350px");
+        component.setHeight("350px");
         component.setMargin(false);
         component.setStyleName("demoContentLayout");
         final VerticalLayout layout = new VerticalLayout();
