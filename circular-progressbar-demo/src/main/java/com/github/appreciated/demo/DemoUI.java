@@ -29,6 +29,7 @@ public class DemoUI extends UI {
     @Override
     protected void init(VaadinRequest request) {
         StylingView view = new StylingView();
+        view.setMargin(false);
         component = new VerticalLayout();
         component.addComponent(view);
         component.setComponentAlignment(view, Alignment.MIDDLE_CENTER);
