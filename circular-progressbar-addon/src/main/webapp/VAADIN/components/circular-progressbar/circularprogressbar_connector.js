@@ -15,10 +15,10 @@ window.com_github_appreciated_circularprogressbar_CircularProgressBar = function
     '</svg>';
     this.onStateChange = function () {
         updateTrack(this.getState().scale);
-        animateProgress(this.getState().value, this.getState().scale);
         if (this.getState().label) {
             updateLabel(this.getState().label);
         }
+        animateProgress(this.getState().value, this.getState().scale);
     }
 
     function animateProgress(percent = 0, scale = 1.0) {
@@ -67,11 +67,11 @@ window.com_github_appreciated_circularprogressbar_CircularProgressBar = function
 
     function updateLabel(labelText){
         var count = circularProgressbar.querySelector('#count');
-        count.setAttribute('y', 45);
+        count.setAttribute('y', 43);
         var label = circularProgressbar.querySelector('#label');
         if (!label){
               var svg = circularProgressbar.querySelector('#animated');
-              svg.innerHTML = svg.innerHTML + '<text id="label" x="50" y="60" text-anchor="middle" dy="7" font-size="10">'+labelText+'</text>';
+              svg.innerHTML = svg.innerHTML + '<text id="label" x="50" y="59" text-anchor="middle" dy="7" font-size="11">'+labelText+'</text>';
         } else {
             label.textContent = labelText;
         }
