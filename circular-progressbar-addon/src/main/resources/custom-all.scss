@@ -1,0 +1,21 @@
+@mixin custom-all {
+    .circular-progressbar svg #progress-background {
+        stroke: red; // color the track
+    }
+    .circular-progressbar svg #progress-border {
+        stroke: green; // color the border
+    }
+    .circular-progressbar svg #progress-inner {
+        stroke: blue;  // color the inner
+    }
+    .circular-progressbar svg .circular-progressbar-circle-part {
+        transform-origin: 50% 50%; // set the rotate origin
+        transform: rotate(180deg); // rotate by 180 deg
+    }
+    .circular-progressbar svg #count {
+        fill: grey; // set counter font color
+    }
+    .circular-progressbar svg #label {
+        fill: black; // if you use the label set the color like this
+    }
+}

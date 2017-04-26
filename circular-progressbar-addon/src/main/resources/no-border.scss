@@ -1,0 +1,13 @@
+@mixin no-border {
+    // If you make the inner stroke transparent and set the color of the "border" (the inner stroke is actually only
+    // drawn above the border stroke) the progressbar appears to have no border.
+    // I recommend doing it like that to prevent any rendering issues if you choose instead to increase the size of the
+    // inner stroke (this method can look also fine but in some cases the color of the border below shines through at
+    // the edge)
+    .circular-progressbar svg #progress-border {
+       stroke: red; // your desired color
+    }
+    .circular-progressbar svg #progress-inner {
+       stroke: transparent; // make the inner transparent (read above)
+    }
+}

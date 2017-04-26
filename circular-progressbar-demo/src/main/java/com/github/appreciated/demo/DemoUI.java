@@ -19,6 +19,7 @@ import javax.servlet.annotation.WebServlet;
 public class DemoUI extends UI {
 
     private VerticalLayout component;
+    private TestView testView;
 
     @WebServlet(value = "/*", asyncSupported = true)
     @VaadinServletConfiguration(productionMode = false, ui = DemoUI.class)
@@ -31,6 +32,8 @@ public class DemoUI extends UI {
         view.setMargin(false);
         view.circularProgress.setScale(0.75f);
         view.circularProgress.setLabel("Test");
+        view.circularProgress.setValue(0.5f);
+        view.addStyleName("rotate");
         component = new VerticalLayout();
         component.addComponent(view);
         component.setComponentAlignment(view, Alignment.MIDDLE_CENTER);
@@ -38,6 +41,8 @@ public class DemoUI extends UI {
         component.setHeight("350px");
         component.setMargin(false);
         component.setStyleName("demoContentLayout");
+        testView = new TestView();
+        component.addComponent(testView);
         final VerticalLayout layout = new VerticalLayout();
         layout.setSizeFull();
         layout.setMargin(false);
@@ -46,14 +51,14 @@ public class DemoUI extends UI {
         layout.setComponentAlignment(component, Alignment.MIDDLE_CENTER);
         setContent(layout);
     }
-/*
+
     @Override
     public void attach() {
         super.attach();
         new Thread(() -> {
             for (int i = 0; i <= 10; i++) {
-                final double value = i * 10 + 0.3253452345234523452345;
-                component.getProgressBars().forEach(circularProgressBar -> {
+                final float value = i / 10.0f;
+                testView.getProgressBars().forEach(circularProgressBar -> {
                     try {
                         Thread.sleep(250);
                     } catch (InterruptedException e) {
@@ -64,8 +69,8 @@ public class DemoUI extends UI {
                 });
             }
             for (int i = 10; i >= 0; i--) {
-                final double value = i * 10 + 0.3253452345234523452345;
-                component.getProgressBars().forEach(circularProgressBar -> {
+                final float value = i / 10.0f;
+                testView.getProgressBars().forEach(circularProgressBar -> {
                     try {
                         Thread.sleep(250);
                     } catch (InterruptedException e) {
@@ -76,5 +81,5 @@ public class DemoUI extends UI {
                 });
             }
         }).start();
-    }*/
+    }
 }

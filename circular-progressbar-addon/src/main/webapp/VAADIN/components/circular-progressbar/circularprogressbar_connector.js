@@ -1,7 +1,7 @@
 window.com_github_appreciated_circularprogressbar_CircularProgressBar = function () {
 
     var circularProgressbar = this.getElement();
-    circularProgressbar.innerHTML = '<svg class="circular-progressbar" id="animated" viewBox="0 0 100 100">'+
+    circularProgressbar.innerHTML = '<svg id="animated" viewBox="0 0 100 100">'+
     //'<defs>' +
     //'<linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">' +
     //'<stop offset="0%" stop-color="#f00"/>' +

@@ -1,0 +1,11 @@
+@mixin custom-color {
+    .circular-progressbar svg #progress-background {
+        stroke: red; // color the track
+    }
+    .circular-progressbar svg #progress-border {
+        stroke: green; // color the border
+    }
+    .circular-progressbar svg #progress-inner {
+        stroke: blue;  // color the inner
+    }
+}

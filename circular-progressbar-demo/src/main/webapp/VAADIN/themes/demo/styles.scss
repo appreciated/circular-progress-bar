@@ -21,14 +21,9 @@ $darkgreen: darken($green, 30%);
 		background: radial-gradient(circle, white, black);
 	}
 
-	div.circular-progressbar {
-		color: $green;
-		font-size: 50pt;
-		font-weight: bold;
-		text-shadow: 0px 3px 0px $darkgreen,
-             0px 14px 10px rgba(0,0,0,0.15),
-             0px 24px 2px rgba(0,0,0,0.1),
-             0px 34px 30px rgba(0,0,0,0.1);
-        text-align: center;
-	}
+	.rotate svg .circular-progressbar-circle-part {
+        transform-origin: 50% 50%; // change the origin to rotate at the correct point
+        transform: rotate(225deg); // rotate by 225°
+    }
+
 }

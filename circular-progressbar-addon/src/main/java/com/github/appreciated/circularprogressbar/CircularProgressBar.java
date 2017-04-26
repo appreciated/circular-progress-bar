@@ -13,6 +13,7 @@ public class CircularProgressBar extends AbstractJavaScriptComponent {
             setWidth(100, Unit.PIXELS);
             setHeight(100, Unit.PIXELS);
         }
+        setPrimaryStyleName("circular-progressbar");
     }
 
     public void setValue(float value) {
