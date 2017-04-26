@@ -42,12 +42,11 @@ public class DemoUI extends UI {
         component.setMargin(false);
         component.setStyleName("demoContentLayout");
         testView = new TestView();
-        component.addComponent(testView);
         final VerticalLayout layout = new VerticalLayout();
-        layout.setSizeFull();
-        layout.setMargin(false);
+        layout.setMargin(true);
         layout.setSpacing(false);
         layout.addComponent(component);
+        layout.addComponent(testView);
         layout.setComponentAlignment(component, Alignment.MIDDLE_CENTER);
         setContent(layout);
     }

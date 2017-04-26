@@ -5,9 +5,7 @@ $gray: #d1d1cf;
 $green: #40b527;
 $darkgreen: darken($green, 30%);
 
-
 /* Import and include this mixin into your project theme to include the addon themes */
-
 
 // Prefix all selectors in your theme with .demo
 .demo {
@@ -18,7 +16,7 @@ $darkgreen: darken($green, 30%);
 
 	// You can style your demo app right here
 	.demoContentLayout {
-		background: radial-gradient(circle, white, black);
+		@include radial-gradient(circle, white, black);
 	}
 
 	.rotate svg .circular-progressbar-circle-part {
