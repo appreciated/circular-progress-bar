@@ -16,7 +16,7 @@ $darkgreen: darken($green, 30%);
 
 	// You can style your demo app right here
 	.demoContentLayout {
-		@include radial-gradient(circle, white, black);
+		@include radial-gradient(circle, #d0d0d0, #adadad);
 	}
 
 	.rotate svg .circular-progressbar-circle-part {
