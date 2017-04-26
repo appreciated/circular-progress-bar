@@ -23,6 +23,22 @@ public class CircularProgressBar extends AbstractJavaScriptComponent {
         return getState().value;
     }
 
+    public void setScale(float value) {
+        getState().scale = value;
+    }
+
+    public float getScale() {
+        return getState().scale;
+    }
+
+    public void setLabel(String value) {
+        getState().label = value;
+    }
+
+    public String getLabel() {
+        return getState().label;
+    }
+
     @Override
     protected CircularProgressBarState getState() {
         return (CircularProgressBarState) super.getState();

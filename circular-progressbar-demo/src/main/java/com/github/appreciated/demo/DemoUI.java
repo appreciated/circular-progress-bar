@@ -7,7 +7,6 @@ import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Alignment;
-import com.vaadin.ui.Component;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -30,6 +29,8 @@ public class DemoUI extends UI {
     protected void init(VaadinRequest request) {
         StylingView view = new StylingView();
         view.setMargin(false);
+        view.circularProgress.setScale(0.75f);
+        view.circularProgress.setLabel("Test");
         component = new VerticalLayout();
         component.addComponent(view);
         component.setComponentAlignment(view, Alignment.MIDDLE_CENTER);

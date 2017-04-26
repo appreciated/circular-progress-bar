@@ -8,4 +8,6 @@ import com.vaadin.shared.ui.JavaScriptComponentState;
 
 public class CircularProgressBarState extends JavaScriptComponentState {
     public float value;
+    public float scale = 1.0f;
+    public String label = null;
 }
