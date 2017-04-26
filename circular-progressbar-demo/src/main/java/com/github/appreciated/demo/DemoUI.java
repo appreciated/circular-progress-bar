@@ -31,7 +31,7 @@ public class DemoUI extends UI {
         StylingView view = new StylingView();
         view.setMargin(false);
         view.circularProgress.setScale(0.75f);
-        view.circularProgress.setLabel("Test");
+        view.circularProgress.setLabel("Loading ...");
         view.circularProgress.setValue(0.5f);
         view.addStyleName("rotate");
         component = new VerticalLayout();
