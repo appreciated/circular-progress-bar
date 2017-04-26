@@ -2,8 +2,6 @@
     .circular-progressbar #progress-background {
         $bg-lightness: if(color-luminance($v-background-color) < 10, min($v-bevel-depth/2, 10%), min($v-bevel-depth/-2, -10%));
         stroke: scale-color($v-background-color, $lightness: $bg-lightness, $saturation: $v-bevel-depth/-2);
-        transform-origin: 50% 50%; // change the origin to rotate at the correct point
-        transform: rotate(225deg); // rotate by 225°
     }
     .circular-progressbar #progress-border {
        @if $border {
@@ -11,11 +9,11 @@
        } @else {
           stroke: none;
        }
-       transform-origin: 50% 50%; // change the origin to rotate at the correct point
-       transform: rotate(225deg); // rotate by 225°
     }
     .circular-progressbar #progress-inner {
         stroke: $v-selection-color;
+    }
+    .circular-progressbar .circular-progressbar-circle-part {
         transform-origin: 50% 50%; // change the origin to rotate at the correct point
         transform: rotate(225deg); // rotate by 225°
     }

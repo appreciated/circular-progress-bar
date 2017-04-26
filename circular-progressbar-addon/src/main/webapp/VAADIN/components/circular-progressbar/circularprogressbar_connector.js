@@ -8,9 +8,9 @@ window.com_github_appreciated_circularprogressbar_CircularProgressBar = function
     //'<stop offset="100%" stop-color="#0f0"/>' +
     //'</linearGradient>' +
     //'</defs>' +
-    '<path id="progress-background" stroke-linecap="round" stroke-width="6" stroke="#d4d4d4" fill="none" stroke-dasharray="251.2,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Track
-    '<path id="progress-border" stroke-linecap="round" stroke-width="6" stroke="#1362b1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Border
-    '<path id="progress-inner" stroke-linecap="round" stroke-width="4" stroke="#197de1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Indicator
+    '<path id="progress-background" class="circular-progressbar-circle-part" stroke-linecap="round" stroke-width="6" stroke="#d4d4d4" fill="none" stroke-dasharray="251.2,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Track
+    '<path id="progress-border" class="circular-progressbar-circle-part" stroke-linecap="round" stroke-width="6" stroke="#1362b1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Border
+    '<path id="progress-inner" class="circular-progressbar-circle-part" stroke-linecap="round" stroke-width="4" stroke="#197de1" fill="none" stroke-dasharray="0,251.2" d="M50 10 a 40 40 0 0 1 0 80 a 40 40 0 0 1 0 -80"></path>'+ // Indicator
     '<text id="count" x="50" y="50" text-anchor="middle" dy="7" font-size="17">0%</text>' + // Percentage Label
     '</svg>';
     this.onStateChange = function () {
