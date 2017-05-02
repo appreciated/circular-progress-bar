@@ -9,6 +9,10 @@ import com.vaadin.ui.AbstractJavaScriptComponent;
 @JavaScript({"vaadin://addons/circular-progressbar/circular-progressbar_connector.js"})
 public class CircularProgressBarClient extends AbstractJavaScriptComponent {
     public CircularProgressBarClient() {
+        if (getHeight() == -1.0F && getWidth() == -1.0F) {
+            setWidth(125, Unit.PIXELS);
+            setHeight(125, Unit.PIXELS);
+        }
         setPrimaryStyleName("circular-progressbar");
     }
 

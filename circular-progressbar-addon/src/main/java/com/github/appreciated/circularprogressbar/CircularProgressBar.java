@@ -43,7 +43,8 @@ public class CircularProgressBar extends AbsoluteLayout {
         }
         this.progressbar = progressbar;
         this.addComponent(progressbar);
-
+        progressbar.setWidth(100,Unit.PERCENTAGE);
+        progressbar.setHeight(100,Unit.PERCENTAGE);
         this.setPosition(progressbar, getComponentPosition(1));
     }
 
