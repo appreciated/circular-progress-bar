@@ -1,4 +1,4 @@
-window.com_github_appreciated_circularprogressbar_CircularProgressBar = function () {
+window.com_github_appreciated_circularprogressbar_CircularProgressBarClient = function () {
 
     var circularProgressbar = this.getElement();
     circularProgressbar.innerHTML = '<svg id="animated" viewBox="0 0 100 100">'+

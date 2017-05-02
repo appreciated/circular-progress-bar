@@ -4,9 +4,11 @@ import com.vaadin.annotations.Push;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
 import com.vaadin.annotations.VaadinServletConfiguration;
+import com.vaadin.server.ThemeResource;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.Alignment;
+import com.vaadin.ui.Image;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
@@ -31,7 +33,8 @@ public class DemoUI extends UI {
         StylingView view = new StylingView();
         view.setMargin(false);
         view.circularProgress.setScale(0.75f);
-        view.circularProgress.setLabel("Loading ...");
+        view.circularProgress.setLabel("Loading");
+        view.circularProgress.setImage(new Image("image", new ThemeResource("images/test.png")));
         view.circularProgress.setValue(0.5f);
         view.addStyleName("rotate");
         component = new VerticalLayout();

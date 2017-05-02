@@ -1,48 +1,76 @@
 package com.github.appreciated.circularprogressbar;
 
-import com.vaadin.annotations.JavaScript;
-import com.vaadin.ui.AbstractJavaScriptComponent;
+import com.vaadin.ui.AbsoluteLayout;
+import com.vaadin.ui.Image;
 
 /**
- * Created by Johannes on 10.01.2017.
+ * Created by Johannes on 01.05.2017.
  */
-@JavaScript({"vaadin://components/circular-progressbar/circularprogressbar_connector.js"})
-public class CircularProgressBar extends AbstractJavaScriptComponent {
+public class CircularProgressBar extends AbsoluteLayout {
+    private final CircularProgressBarClient progressbar;
+    private Image image;
+
     public CircularProgressBar() {
+        progressbar = new CircularProgressBarClient();
+        this.addComponent(progressbar);
         if (getHeight() == -1.0F && getWidth() == -1.0F) {
             setWidth(100, Unit.PIXELS);
             setHeight(100, Unit.PIXELS);
         }
-        setPrimaryStyleName("circular-progressbar");
+        this.setPosition(progressbar, getComponentPosition(1));
+    }
+
+    public CircularProgressBar withImage(Image image) {
+        setImage(image);
+        return this;
+    }
+
+    public void setImage(Image image) {
+        if (image != null) {
+            this.removeComponent(image);
+        }
+        this.image = image;
+        image.setSizeFull();
+        this.addComponent(image);
+        this.setPosition(image, getComponentPosition(0));
     }
 
     public void setValue(float value) {
-        getState().value = value;
+        progressbar.getState().value = value;
     }
 
     public float getProgress() {
-        return getState().value;
+        return progressbar.getState().value;
     }
 
     public void setScale(float value) {
-        getState().scale = value;
+        progressbar.getState().scale = value;
     }
 
     public float getScale() {
-        return getState().scale;
+        return progressbar.getState().scale;
     }
 
     public void setLabel(String value) {
-        getState().label = value;
+        progressbar.getState().label = value;
     }
 
     public String getLabel() {
-        return getState().label;
+        return progressbar.getState().label;
     }
 
-    @Override
-    protected CircularProgressBarState getState() {
-        return (CircularProgressBarState) super.getState();
+    public CircularProgressBarClient getProgressbar() {
+        return progressbar;
+    }
+
+    private ComponentPosition getComponentPosition(int zIndex) {
+        ComponentPosition componentPosition = new ComponentPosition();
+        componentPosition.setTop(0.0f, Unit.PIXELS);
+        componentPosition.setBottom(0.0f, Unit.PIXELS);
+        componentPosition.setLeft(0.0f, Unit.PIXELS);
+        componentPosition.setRight(0.0f, Unit.PIXELS);
+        componentPosition.setZIndex(zIndex);
+        return componentPosition;
     }
 
 }
