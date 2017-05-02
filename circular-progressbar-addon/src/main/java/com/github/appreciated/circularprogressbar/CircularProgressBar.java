@@ -35,6 +35,10 @@ public class CircularProgressBar extends AbsoluteLayout {
         this.setPosition(image, getComponentPosition(0));
     }
 
+    public Image getImage() {
+        return image;
+    }
+
     public void setValue(float value) {
         progressbar.getState().value = value;
     }
