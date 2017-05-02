@@ -2,9 +2,32 @@
 
 ![Alt Text](https://github.com/appreciated/blob/blob/master/progress-bar-demo.gif)
 
-## Download release
+## Vaadin Directory
 
-Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to https://vaadin.com/directory#!addon/circular-progressbar-add-on
+For download and reviews, go to https://vaadin.com/directory#!addon/circular-progressbar-add-on1
+
+## Installation
+
+Add the following lines to you POM
+```
+<dependency>
+   <groupId>com.github.appreciated</groupId>
+   <artifactId>circular-progressbar</artifactId>
+   <version>LATEST</version>
+</dependency>
+
+<!-- Should be there by default
+<repository>
+   <id>vaadin-addons</id>
+   <url>http://maven.vaadin.com/vaadin-addons</url>
+</repository> 
+--> 
+```
+
+Excute the following command in the at the root of your project
+```
+mvn install
+```
 
 ## Building and running demo
 ```
