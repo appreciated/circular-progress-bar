@@ -38,8 +38,8 @@ public class CircularProgressBarClient extends AbstractJavaScriptComponent {
     }
 
     @Override
-    protected CircularProgressBarState getState() {
-        return (CircularProgressBarState) super.getState();
+    protected CircularProgressBarClientState getState() {
+        return (CircularProgressBarClientState) super.getState();
     }
 
 }
