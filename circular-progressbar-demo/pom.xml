@@ -5,7 +5,7 @@
 	<groupId>com.github.appreciated</groupId>
 	<artifactId>circular-progressbar-demo</artifactId>
 	<packaging>war</packaging>
-	<version>0.8</version>
+	<version>0.8.1</version>
 	<name>Circular Progressbar Add-on Demo</name>
 
 	<prerequisites>
@@ -19,7 +19,7 @@
 		<vaadin.version>8.0.5</vaadin.version>
 		<vaadin.plugin.version>8.0.5</vaadin.plugin.version>
 		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
-		<vaadin.widgetset.mode>fetch</vaadin.widgetset.mode>
+		<vaadin.widgetset.mode>cdn</vaadin.widgetset.mode>
 	</properties>
 
 
