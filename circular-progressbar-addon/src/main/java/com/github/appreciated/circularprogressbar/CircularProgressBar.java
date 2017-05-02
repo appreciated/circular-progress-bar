@@ -12,8 +12,8 @@ public class CircularProgressBar extends AbsoluteLayout {
 
     public CircularProgressBar() {
         if (getHeight() == -1.0F && getWidth() == -1.0F) {
-            setWidth(100, Unit.PIXELS);
-            setHeight(100, Unit.PIXELS);
+            setWidth(125, Unit.PIXELS);
+            setHeight(125, Unit.PIXELS);
         }
        setProgressbar(new CircularProgressBarClient());
     }
