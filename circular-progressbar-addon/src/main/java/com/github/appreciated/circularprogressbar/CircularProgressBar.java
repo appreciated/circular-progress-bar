@@ -7,17 +7,11 @@ import com.vaadin.ui.Image;
  * Created by Johannes on 01.05.2017.
  */
 public class CircularProgressBar extends AbsoluteLayout {
-    private final CircularProgressBarClient progressbar;
+    private CircularProgressBarClient progressbar;
     private Image image;
 
     public CircularProgressBar() {
-        progressbar = new CircularProgressBarClient();
-        this.addComponent(progressbar);
-        if (getHeight() == -1.0F && getWidth() == -1.0F) {
-            setWidth(100, Unit.PIXELS);
-            setHeight(100, Unit.PIXELS);
-        }
-        this.setPosition(progressbar, getComponentPosition(1));
+       setProgressbar(new CircularProgressBarClient());
     }
 
     public CircularProgressBar withImage(Image image) {
@@ -26,8 +20,8 @@ public class CircularProgressBar extends AbsoluteLayout {
     }
 
     public void setImage(Image image) {
-        if (image != null) {
-            this.removeComponent(image);
+        if (this.image != null) {
+            this.removeComponent(this.image);
         }
         this.image = image;
         image.setSizeFull();
@@ -37,6 +31,19 @@ public class CircularProgressBar extends AbsoluteLayout {
 
     public Image getImage() {
         return image;
+    }
+
+    public void setProgressbar(CircularProgressBarClient progressbar) {
+        if (this.progressbar != null) {
+            this.removeComponent(this.progressbar);
+        }
+        this.progressbar = progressbar;
+        this.addComponent(progressbar);
+        if (getHeight() == -1.0F && getWidth() == -1.0F) {
+            setWidth(100, Unit.PIXELS);
+            setHeight(100, Unit.PIXELS);
+        }
+        this.setPosition(progressbar, getComponentPosition(1));
     }
 
     public void setValue(float value) {
