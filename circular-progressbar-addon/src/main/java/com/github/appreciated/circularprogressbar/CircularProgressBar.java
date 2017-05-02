@@ -11,6 +11,10 @@ public class CircularProgressBar extends AbsoluteLayout {
     private Image image;
 
     public CircularProgressBar() {
+        if (getHeight() == -1.0F && getWidth() == -1.0F) {
+            setWidth(100, Unit.PIXELS);
+            setHeight(100, Unit.PIXELS);
+        }
        setProgressbar(new CircularProgressBarClient());
     }
 
@@ -39,10 +43,7 @@ public class CircularProgressBar extends AbsoluteLayout {
         }
         this.progressbar = progressbar;
         this.addComponent(progressbar);
-        if (getHeight() == -1.0F && getWidth() == -1.0F) {
-            setWidth(100, Unit.PIXELS);
-            setHeight(100, Unit.PIXELS);
-        }
+
         this.setPosition(progressbar, getComponentPosition(1));
     }
 
