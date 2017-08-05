@@ -1,6 +1,6 @@
 # Circular Progressbar Add-on for Vaadin 8
 
-![Alt Text](https://github.com/appreciated/blob/blob/master/progress-bar-demo.gif)
+![Alt Text](https://github.com/appreciated/blob/blob/master/circular-progressbar/progress-bar-demo.gif)
 
 ## Vaadin Directory
 
