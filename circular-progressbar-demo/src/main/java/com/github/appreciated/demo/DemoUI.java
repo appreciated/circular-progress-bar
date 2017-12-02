@@ -66,7 +66,7 @@ public class DemoUI extends UI {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    DemoUI.this.access(() -> circularProgressBar.setValue(value));
+                    access(() -> circularProgressBar.setValue(value));
                     System.out.println(value);
                 });
             }
@@ -78,7 +78,7 @@ public class DemoUI extends UI {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    DemoUI.this.access(() -> circularProgressBar.setValue(value));
+                    access(() -> circularProgressBar.setValue(value));
                     System.out.println(value);
                 });
             }
