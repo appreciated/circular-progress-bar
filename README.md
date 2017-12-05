@@ -57,11 +57,11 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-CircularProgressbar is written by Appreciated 
+circular-progressbar is written by Appreciated 
 
 ## Features
 
-A Circular Progressbar Component for Vaadin with animated Progress. Realized with SVG, and JavaScript.
+A circular progress bar Component for Vaadin with animated Progress. Realized with SVG, and JavaScript.
 
 ## API
 
