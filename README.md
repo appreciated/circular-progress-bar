@@ -61,7 +61,7 @@ circular-progressbar is written by Appreciated
 
 ## Features
 
-A circular progress bar Component for Vaadin with animated Progress. Realized with SVG, and JavaScript.
+A circular progress bar Component for Vaadin with transition like behavior. Done by using SVG, and JavaScript.
 
 ## API
 
