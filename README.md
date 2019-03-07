@@ -1,5 +1,7 @@
 # Circular progress bar Add-on for Vaadin 8
 
+Forked from https://github.com/appreciated/circular-progress-bar
+
 ![Alt Text](https://github.com/appreciated/blob/blob/master/circular-progressbar/progress-bar-demo.gif)
 
 ## Vaadin Directory
