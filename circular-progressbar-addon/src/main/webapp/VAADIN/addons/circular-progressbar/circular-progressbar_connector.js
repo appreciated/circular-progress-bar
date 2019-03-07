@@ -21,7 +21,10 @@ window.com_github_appreciated_circularprogressbar_CircularProgressBarClient = fu
         animateProgress(this.getState().value, this.getState().scale);
     }
 
-    function animateProgress(percent = 0, scale = 1.0) {
+    function animateProgress(percent, scale) {
+        percent = (percent === undefined) ? 0 : percent;
+        scale = (scale === undefined) ? 1.0 : scale;
+        
         if (percent !== 'undefined') {
             console.log(percent);
             var progressBorder = circularProgressbar.querySelector('#progress-border');
@@ -61,7 +64,8 @@ window.com_github_appreciated_circularprogressbar_CircularProgressBarClient = fu
         }
     }
 
-    function updateTrack(scale = 1.0) {
+    function updateTrack(scale) {
+        scale = (scale === undefined) ? 1.0 : scale;
         var progressTrack = circularProgressbar.querySelector('#progress-background');
         progressTrack.setAttribute('stroke-dasharray', 251.2 * scale + ',251.2');
     }
