@@ -19,7 +19,7 @@
         <vaadin.version>8.7.1</vaadin.version>
         <vaadin.plugin.version>8.7.1</vaadin.plugin.version>
         <jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
-        <vaadin.widgetset.mode>cdn</vaadin.widgetset.mode>
+        <vaadin.widgetset.mode>local</vaadin.widgetset.mode>
     </properties>
 
     <organization>
@@ -78,8 +78,7 @@
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-client-compiler</artifactId>
-            <scope>provided</scope>
+            <artifactId>vaadin-client-compiled</artifactId>
         </dependency>
         <dependency>
             <groupId>com.vaadin</groupId>
