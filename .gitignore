@@ -2,3 +2,5 @@
 /.designer/
 *.iml
 *.scss.cache
+/circular-progressbar-addon/target/
+/circular-progressbar-demo/target/
